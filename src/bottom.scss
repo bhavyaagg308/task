@@ -1,0 +1,106 @@
+.bottom-comp {
+  margin-top: -23%;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 2%;
+  //   background-color: rgba(32, 178, 171, 0.5);
+  display: flex;
+  flex-direction: column;
+  // margin-left: .5%;
+
+  .test-main-div {
+    width: 100%;
+    height: 600px;
+    // background-color: bisque;
+    position: relative;
+    padding-left: 10%;
+    position: relative;
+    top: 1%;
+
+    .hidden-div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      // background-color: #ff4d4d;
+      z-index: 3;
+    }
+
+    .top-hr-line {
+      width: 200px;
+      height: 200px;
+      border-bottom: 2px solid #ff4d4d;
+      border-left: 2px solid #ff4d4d;
+      position: relative;
+      z-index: 2;
+      opacity: 0;
+      transition: 1s;
+
+      .content-one {
+        position: absolute;
+        bottom: -14%;
+        right: -16%;
+        width: 100px;
+        height: 55px;
+        background-color: rgb(248, 124, 110);
+        color: white;
+        text-align: center;
+        padding-top: 7%;
+      }
+      .circle-one {
+        position: absolute;
+        bottom: -4%;
+        left: -2.5%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(248, 124, 110);
+      }
+    }
+    .bottom-hr-line {
+      width: 350px;
+      height: 150px;
+      border-bottom: 2px solid #ff4d4d;
+      border-left: 2px solid #ff4d4d;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transition: 1s;
+
+      .content-two {
+        position: absolute;
+        bottom: -14%;
+        right: -16%;
+        width: 100px;
+        height: 55px;
+        background-color: rgb(248, 124, 110);
+        color: white;
+        text-align: center;
+        padding-top: 4%;
+      }
+      .circle-two {
+        position: absolute;
+        bottom: -4%;
+        left: -2.5%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgb(248, 124, 110);
+      }
+    }
+
+    .hrline {
+      position: absolute;
+      z-index: 0;
+      bottom: 0%;
+      left: 33.5%;
+      width: 2px;
+      height: 150px;
+      background-color: #ff4d4d;
+      opacity: 0;
+      transition: 1s;
+      // top: 2%;
+    }
+  }
+}
