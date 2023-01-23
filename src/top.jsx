@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./top.scss";
 
 const Top = () => {
+  const [img, setImg] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setImg(true);
+    }, 800);
+  }, []);
+
   return (
     <div className="top-comp">
       <div className="left-side">
@@ -19,6 +26,9 @@ const Top = () => {
           <img
             src="https://images.unsplash.com/photo-1593693595296-7f89cb1d8b0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2t5JTIwaW1hZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             alt="img"
+            style={{
+              animation: img && "identifier 1.2s",
+            }}
           />
         </div>
       </div>

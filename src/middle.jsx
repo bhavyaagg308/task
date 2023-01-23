@@ -47,19 +47,27 @@ const Middle = () => {
               }}
             >
               <div className="slide1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Learn More</button>
                 <img
                   src="https://images.unsplash.com/photo-1618886487325-f665032b6352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNreSUyMGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                   alt="slide1"
                 />
               </div>
               <div className="slide2">
-              <img
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Learn More</button>
+
+                <img
                   src="https://images.unsplash.com/photo-1516649195228-a023c093df99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNreSUyMGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                   alt="slide1"
                 />
               </div>
               <div className="slide3">
-              <img
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Learn More</button>
+
+                <img
                   src="https://images.unsplash.com/photo-1442323794357-25b2ec110967?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2t5JTIwaW1hZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                   alt="slide1"
                 />

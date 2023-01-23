@@ -41,7 +41,7 @@
       padding-left: 20%;
       padding-right: 20%;
     }
-    button{
+    button {
       border: none;
       outline: none;
       color: white;
@@ -50,6 +50,7 @@
       margin-left: 20%;
       height: 6%;
       width: 25%;
+      cursor: pointer;
     }
     // justify-content: center;
     // align-items: center;
@@ -71,77 +72,138 @@
       justify-content: center;
       align-items: center;
       position: relative;
-  
+
       .navbar {
-          position: absolute;
-          width: 100px;
-          height: 40px;
-          left: -6%;
-          top: 7%;
-          background-color: transparent;
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        left: -6%;
+        top: 7%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        z-index: 2;
+
+        .left-nav {
+          width: 49%;
+          height: 100%;
+          background-color: rgb(9, 57, 230);
+          cursor: pointer;
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 2%;
-          z-index: 2;
-  
-          .left-nav {
-              width: 49%;
-              height: 100%;
-              background-color: rgb(9, 57, 230);
-              cursor: pointer;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #fff;
-          }
-          .right-nav {
-              width: 49%;
-              height: 100%;
-              background-color: rgb(9, 57, 230);
-              cursor: pointer;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #fff;
-          }
+          color: #fff;
+        }
+        .right-nav {
+          width: 49%;
+          height: 100%;
+          background-color: rgb(9, 57, 230);
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+        }
       }
-  
+
       .slider {
+        width: 100%;
+        height: 100%;
+        margin-left: 3%;
+        // border: 1px solid black;
+        overflow: hidden;
+
+        .slides {
           width: 100%;
-          height: 100%; margin-left: 3%;
-          // border: 1px solid black;
-          overflow: hidden;
-  
-          .slides {
-              width: 100%;
-              height: 70%;
-              display: flex;
-              align-items: center;
-              gap: 2%;
-              // background-color: brown;
-  
-              .slide1 {
-                  min-width: 400px;
-                  height: 400px;
-                  background-color: red;
-              }
-              .slide2 {
-                  min-width: 400px;
-                  height: 400px;
-                  background-color: green;
-              }
-              .slide3 {
-                  min-width: 400px;
-                  height: 400px;
-                  background-color: blue;
-              }
-              img{
-                height: 100%;
-                width: 100%;
-              }
+          height: 70%;
+          display: flex;
+          align-items: center;
+          gap: 2%;
+          // background-color: brown;
+
+          .slide1 {
+            min-width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            p {
+              color: #fff;
+              text-align: center;
+              position: absolute;
+              font-weight: 800;
+            }
+            button {
+              position: absolute;
+              bottom: 30%;
+              border: none;
+              outline: none;
+              color: white;
+              background-color: rgb(151, 34, 34);
+              height: 9%;
+              cursor: pointer;
+              width: 25%;
+            }
           }
+          .slide2 {
+            min-width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            p {
+              color: #fff;
+              text-align: center;
+              position: absolute;
+              font-weight: 800;
+            }
+            button {
+              position: absolute;
+              bottom: 30%;
+              border: none;
+              outline: none;
+              color: white;
+              background-color: rgb(151, 34, 34);
+              height: 9%;
+              cursor: pointer;
+              width: 25%;
+            }
+          }
+          .slide3 {
+            min-width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            p {
+              color: #fff;
+              text-align: center;
+              position: absolute;
+              font-weight: 800;
+            }
+            button {
+              position: absolute;
+              bottom: 30%;
+              border: none;
+              outline: none;
+              color: white;
+              background-color: rgb(151, 34, 34);
+              height: 9%;
+              cursor: pointer;
+              width: 25%;
+            }
+          }
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
       }
-  }
+    }
   }
 }

@@ -1,27 +1,22 @@
-
 import React, { useState, useEffect } from "react";
 import "./bottom.scss";
 
-
-
-
-
 const Bottom = () => {
-
   const [topPart, setTopPart] = useState(false);
-const [bottomPart, setBottomPart] = useState(false);
+  const [bottomPart, setBottomPart] = useState(false);
 
-function handleMouseEnter() {
-  setTimeout(() => {
-    setTopPart(true)
-  }, 500)
-}
+  function handleMouseEnter() {
+    setTimeout(() => {
+      setTopPart(true);
+    }, 500);
+  }
 
-useEffect(() => {
-  topPart && setTimeout(() => {
-    setBottomPart(true)
-  }, 1500)
-}, [topPart])
+  useEffect(() => {
+    topPart &&
+      setTimeout(() => {
+        setBottomPart(true);
+      }, 1500);
+  }, [topPart]);
 
   return (
     <div className="bottom-comp">
